@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мої верстки</title>
+    <title>Мої верстки - GitHub Pages</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,38 +11,49 @@
             margin: 50px auto;
             padding: 20px;
             text-align: center;
+            background: #F7F3ED;
+            color: #422B23;
         }
         h1 {
-            color: #333;
+            color: #422B23;
+            margin-bottom: 30px;
         }
-        ul {
+        .version-links {
             list-style: none;
             padding: 0;
         }
-        li {
-            margin: 15px 0;
+        .version-links li {
+            margin: 20px 0;
         }
-        a {
+        .version-links a {
             display: block;
-            padding: 15px;
-            background: #DBA1A2;
+            padding: 15px 25px;
+            background: linear-gradient(90deg, #C2C6B9, #DBA1A2);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 12px;
             font-size: 18px;
-            transition: background 0.3s;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        a:hover {
-            background: #C48182;
+        .version-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <h1>Виберіть версію верстки:</h1>
-    <ul>
-        <li><a href="flex-version/index-flex.html">Flexbox версія</a></li>
-        <li><a href="grid-version/index-grid.html">Grid версія</a></li>
-        <li><a href="float-version/index-float.html">Float версія</a></li>
+    <h1>🌷 Виберіть версію верстки:</h1>
+    
+    <ul class="version-links">
+        <!-- Тепер файли в корені, тому шляхи прості -->
+        <li><a href="index-flex.html">🎯 Flexbox версія</a></li>
+        <li><a href="index-grid.html">📊 Grid версія</a></li>
+        <li><a href="index-float.html">📐 Float версія</a></li>
     </ul>
+
+    <p style="margin-top: 40px; color: #666; font-size: 14px;">
+        Кожна версія містить однаковий контент, але різну верстку
+    </p>
 </body>
 </html>
